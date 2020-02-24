@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Scada&display=swap');
+
+$white: #f2feff;
+$black: #011011;
+
+html, body {
+	height: 100%;
+}
+body {
+	font-family: 'Scada', Arial, Helvetica, sans-serif;
+	color: #011011;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+}
+nav {
+	display: flex;
+	background-color: $black;
+	color: $white;
+	padding: 2rem;
+	div {
+		font-size: 3rem;
+		margin: auto;
+	}
+}
+.container {
+	display: flex;
+	padding: 2rem;
+}
+table {
+	margin: auto;
+	padding: .5rem;
+	thead tr th{
+		font-weight: bold;
+	}
+	thead, tbody {
+		td, th {
+			text-align: center;
+			padding: 1rem 4rem;
+		}
+	}
+}
