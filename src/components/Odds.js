@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-export class Odds extends Component {
+class Odds extends Component {
 	state = {
-		time: this.props.data.firstChild.firstChild.firstChild.firstChild.data,
-		homeTeam: this.props.data.children[2].firstChild.firstChild.firstChild.firstChild.firstChild.firstChild.firstChild.firstChild.firstChild.data,
-		awayTeam: this.props.data.children[2].firstChild.firstChild.children[2].firstChild.children[1].firstChild.firstChild.firstChild.firstChild.data,
-		homeOdds: this.props.data.childNodes[2].firstChild.childNodes[1].firstChild.firstChild.firstChild.firstChild.data,
-		awayOdds: this.props.data.children[5].firstChild.firstChild.firstChild.data,
-		drawOdds: this.props.data.children[4].firstChild.firstChild.firstChild.data
+		time: this.props.match.firstChild.firstChild.firstChild.firstChild.data,
+		homeTeam: this.props.match.childNodes[2].firstChild.firstChild.firstChild.firstChild.firstChild.firstChild.firstChild.firstChild.firstChild.data,
+		awayTeam: this.props.match.childNodes[2].firstChild.firstChild.childNodes[2].firstChild.childNodes[1].firstChild.firstChild.firstChild.firstChild.data,
+		homeOdds: this.props.match.children[3].firstChild.firstChild.firstChild.data,
+		drawOdds: this.props.match.children[4].firstChild.firstChild.firstChild.data,
+		awayOdds: this.props.match.children[5].firstChild.firstChild.firstChild.data
 	}
 	render() {
 		return (
