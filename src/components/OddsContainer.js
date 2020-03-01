@@ -6,7 +6,7 @@ import uuidv4 from 'uuid/v4';
 
 class OddsContainer extends Component {
 	state = {
-		SCRAPER_URL: 'http://api.scraperapi.com/?api_key=da8c16bab358cd83e2268f993bc105ec&url=https://s5.sir.sportradar.com/bet365/en/1/season/66441/fixtures&country_code=uk',
+		SCRAPER_URL: `${process.env.REACT_APP_SCRAPER_PROXY}?api_key=${process.env.REACT_APP_API_KEY}&url=${process.env.REACT_APP_SCRAPER_URL}${process.env.REACT_APP_SCRAPER_PARAMS}`,
 		matches: [],
 		dates: []
 	};
@@ -56,7 +56,6 @@ class OddsContainer extends Component {
 						</tr>
 					</thead>
 					<tbody>
-						<tr className='color'></tr>
 						{this.state.matches ? (
 							this.state.matches.map(match => (
 								<Odds key={uuidv4()} match={match} />

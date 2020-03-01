@@ -31,6 +31,9 @@ nav {
 	background-color: $black;
 	color: $primary;
 	padding: 2rem;
+	a:hover {
+		color: $white;
+	}
 	div {
 		font-size: 3rem;
 		margin: auto;
