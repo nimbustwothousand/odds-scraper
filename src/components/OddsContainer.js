@@ -11,12 +11,6 @@ class OddsContainer extends Component {
 		dates: []
 	};
 
-	objToArr = (obj) => {
-		Object.values(obj).filter((element, index) => {
-			return index < obj.length
-		})
-	}
-
 	componentDidMount() {
 		axios.get(this.state.SCRAPER_URL)
 			.then(res => {
