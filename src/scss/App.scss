@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Scada&display=swap');
 @import 'reset';
+@import 'input-group';
 
 $white: #f6fdfd;
 $black: #011011;
 $primary: #c2f970;
 $secondary: #70798c;
-
-
+$tertiary: #ec7125;
 
 html, body {
 	height: 100%;
@@ -46,11 +46,51 @@ nav {
 		}
 	}
 }
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
 .container {
 	padding: 2rem;
 }
 .flex {
 	display: flex;
+}
+.calculator {
+	max-width: 550px;
+	text-align: center;
+	margin: auto;
+	padding: .5rem;
+
+	input {
+		margin-left: .5rem;
+		margin-right: .5rem;
+	}
+	&>div {
+		margin-bottom: 1rem;
+		border-radius: 10px;
+		width: 100%;
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: 50% 50%;
+
+		&>div {
+			padding: 1rem
+		}
+	}
+	.qual-bet {
+		padding: 2rem;
+		background-color: $primary;
+	}
+	.bet-triggered {
+		padding: 2rem;
+		background-color: $tertiary;
+	}
+	.result {
+		padding: 2rem;
+		background-color: $secondary;
+	}
 }
 table {
 	margin: auto;

@@ -6,6 +6,7 @@ function Navbar() {
 			<div><a href="/" aria-label='homepage link'>Odds Scraper</a></div>
 			<div className="social">
 				<a href="/" aria-label='homepage link'><i className="fas fa-home"></i></a>
+				<a href="/calculator"><i className="fas fa-calculator"></i></a>
 				<a href="https://github.com/nimbustwothousand" rel='noopener noreferrer' target='_blank' aria-label='github link'><i className="fab fa-github"></i></a>
 				<a href="/about" aria-label='about page link'><i className="fas fa-question"></i></a>
 			</div>

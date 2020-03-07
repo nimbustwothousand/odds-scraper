@@ -3,6 +3,7 @@ import Odds from './Odds';
 import axios from 'axios';
 import cheerio from 'cheerio';
 import uuidv4 from 'uuid/v4';
+require('dotenv').config();
 
 class OddsContainer extends Component {
 	state = {
